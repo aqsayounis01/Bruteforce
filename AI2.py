@@ -7,7 +7,7 @@ import time;
 # w,h=pyautogui.size() #to get the size of your screen
 # print(w,h)
 
-Mydb= mysql.connector.connect(host="localhost",user="root",password="*****",database='ai')
+Mydb= mysql.connector.connect(host="localhost",user="root",password="19204@aBs",database='ai')
 cur=Mydb.cursor()
 
 
@@ -18,7 +18,7 @@ root=Tk()
 root.geometry("600x300")
 root.geometry("+500+50")
 root.minsize(400,200)
-root.title("let's hack")
+root.title("Bruteforce")
 root.iconbitmap("safe_secure_privacy_padlock_lock_icon_230581.ico") 
 root.maxsize(500,300)
 
@@ -37,7 +37,7 @@ def hack():
         
         if(i==b):
             print()
-            print(i+" "+f"is password for {usr}")
+            print(i+" "+f"is password for {usr.get()}")
             return
     c=int(b)
     for i in range(100,99999999+1):
@@ -57,6 +57,11 @@ l.place(x=50,y=10)
 ent=Entry(l2,textvariable=usr)
 ent.place(x=210,y=20)
 
+pyautogui.moveTo(730,120)
+pyautogui.click()
+pyautogui.typewrite("abu howaida",interval=0.2)
+pyautogui.moveTo(730,180)
+pyautogui.click()
 
 
 b=Button(text="start",width=5,command=hack)

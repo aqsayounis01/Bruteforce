@@ -1,7 +1,7 @@
 from tkinter import *
 from PIL import Image,ImageTk;
 import mysql.connector
-Mydb= mysql.connector.connect(host="localhost",user="root",password="*****",database='ai')
+Mydb= mysql.connector.connect(host="localhost",user="root",password="19204@aBs",database='ai')
 cur=Mydb.cursor()
 
 root = Tk()
@@ -45,7 +45,7 @@ def np():
 
 root.maxsize(600,400)
 
-l1 =Label(text="Login to your account (password must have more than 3 characters",background="black",fg="white",height=4,font=("MS Arial",10,"bold"))
+l1 =Label(text="Login to your account (password must have more than 3 characters)",background="black",fg="white",height=4,font=("MS Arial",10,"bold"))
 l1.place(x=100,y=0)
 
 l3=Label(root,text="Enter username",bg="black",fg="white",font=("MS Arial",10,"bold"))
